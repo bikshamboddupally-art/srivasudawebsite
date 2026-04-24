@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srivasuda Group | True Wealth India</title>
+    <meta name="description" content="Srivasuda Group - Luxury real estate investment, property management, and plotted developments in Hyderabad.">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-text line">Srivasuda.</div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="nav-logo">Srivasuda.</div>
+        <div class="nav-links">
+            <a href="#about" data-cursor="hover">Vision</a>
+            <a href="#services" data-cursor="hover">Expertise</a>
+            <a href="#projects" data-cursor="hover">Portfolio</a>
+        </div>
+        <a href="#contact" class="btn-primary" data-cursor="hover">Enquire</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <header class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title section-title">Srivasuda</h1>
+                <p class="hero-subtitle">Curating luxury landscapes and long-term wealth.</p>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">Scroll to explore</div>
+            <div class="hero-bg-wrapper reveal-img-container">
+                <div class="hero-bg"></div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <article class="about-text">
+                        <h2 class="section-title">A Vision Of<br>True Wealth.</h2>
+                        <p class="fade-up">With over two decades of architectural mastery and market intuition, Srivasuda True Wealth India LLP specializes in acquiring and developing prime, investment-grade properties.</p>
+                        <p class="fade-up">We believe in a minimalist approach to wealth—investing in legally sound, strategically positioned lands that offer sanctuary and exponential value over time.</p>
+                    </article>
+                    <figure class="about-images">
+                        <div class="reveal-img-container img-1">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Premium Property Aerial View">
+                        </div>
+                        <div class="reveal-img-container img-2">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Villa Architecture">
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats-section" aria-label="Company Statistics">
+            <div class="container stats-grid">
+                <div class="stat-item fade-up">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    <p class="stat-label">Years Heritage</p>
+                </div>
+                <div class="stat-item fade-up">
+                    <span class="stat-number" data-target="4.8">0</span><span class="stat-plus">⭐</span>
+                    <p class="stat-label">Client Trust</p>
+                </div>
+                <div class="stat-item fade-up">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                    <p class="stat-label">Growth Corridors</p>
+                </div>
+                <div class="stat-item fade-up">
+                    <span class="stat-number" data-target="24">0</span><span class="stat-plus">/7</span>
+                    <p class="stat-label">Dedicated Advisory</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="services-bg reveal-img-container">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Architecture Background">
+            </div>
+            <div class="container">
+                <h2 class="section-title center">Our Expertise.</h2>
+                <div class="cards-grid">
+                    <article class="glass-card fade-up" data-cursor="hover">
+                        <h3>Open Plots</h3>
+                        <p>DTCP / RERA-approved layouts in high-growth zones like Sangareddy and Sadashivpet. A secure foundation for generational wealth.</p>
+                    </article>
+                    <article class="glass-card fade-up" data-cursor="hover">
+                        <h3>Residential & Villas</h3>
+                        <p>Premium gated communities and weekend farmhouses. Designed with an editorial eye for holistic, upscale living.</p>
+                    </article>
+                    <article class="glass-card fade-up" data-cursor="hover">
+                        <h3>NRI Advisory</h3>
+                        <p>Bespoke property management and acquisition guidance. A seamless, transparent experience tailored for our global clientele.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curated Lifestyle (Amenities) Section -->
+        <section class="amenities-section" style="padding: 240px 0; background-color: var(--bg-dark); border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 120px;">
+                    <h2 class="section-title" style="margin: 0;">Curated<br>Lifestyle.</h2>
+                    <p style="max-width: 400px; margin-bottom: 24px;" class="fade-up">Every detail is designed to foster a sense of tranquility, security, and supreme comfort.</p>
+                </div>
+                <div class="amenities-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; padding-top: 64px; border-top: 1px solid var(--border-color);">
+                    <div class="amenity-item fade-up">
+                        <span style="font-family: var(--font-body); color: var(--accent-gold); font-size: 0.875rem; letter-spacing: 0.1em; display: block; margin-bottom: 32px;">( 01 )</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-light); margin-bottom: 16px; font-weight: 300;">Lush Landscaping</h4>
+                        <p style="color: var(--text-muted); line-height: 1.6;">Beautifully manicured green spaces and parks designed to immerse you in nature.</p>
+                    </div>
+                    <div class="amenity-item fade-up" style="transition-delay: 0.1s">
+                        <span style="font-family: var(--font-body); color: var(--accent-gold); font-size: 0.875rem; letter-spacing: 0.1em; display: block; margin-bottom: 32px;">( 02 )</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-light); margin-bottom: 16px; font-weight: 300;">24/7 Security</h4>
+                        <p style="color: var(--text-muted); line-height: 1.6;">Round-the-clock surveillance, trained personnel, and secure gated entries.</p>
+                    </div>
+                    <div class="amenity-item fade-up" style="transition-delay: 0.2s">
+                        <span style="font-family: var(--font-body); color: var(--accent-gold); font-size: 0.875rem; letter-spacing: 0.1em; display: block; margin-bottom: 32px;">( 03 )</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-light); margin-bottom: 16px; font-weight: 300;">Clubhouse</h4>
+                        <p style="color: var(--text-muted); line-height: 1.6;">State-of-the-art facilities for recreation, fitness, and community gatherings.</p>
+                    </div>
+                    <div class="amenity-item fade-up" style="transition-delay: 0.3s">
+                        <span style="font-family: var(--font-body); color: var(--accent-gold); font-size: 0.875rem; letter-spacing: 0.1em; display: block; margin-bottom: 32px;">( 04 )</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-light); margin-bottom: 16px; font-weight: 300;">Clear Titles</h4>
+                        <p style="color: var(--text-muted); line-height: 1.6;">100% Vastu compliant and legally approved DTCP/HMDA/RERA layouts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Image Parallax -->
+        <section class="full-image-section" style="height: 120vh; position: relative; overflow: hidden;">
+            <div class="reveal-img-container full-img" style="width: 100%; height: 100%;">
+                <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Exquisite Living" style="transform: scale(1.3);">
+            </div>
+            <div class="full-img-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; pointer-events: none; mix-blend-mode: difference;">
+                <h2 class="section-title center" style="color: var(--text-light); text-align: center; margin: 0; font-size: clamp(6rem, 12vw, 12rem);">Experience<br>Luxury</h2>
+            </div>
+        </section>
+
+        <!-- The Collection (Gallery) Section -->
+        <section class="gallery-grid-section" style="padding: 320px 0; background-color: #080807;">
+            <div class="container">
+                <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 120px;">
+                    <h2 class="section-title" style="margin: 0;">The<br>Collection.</h2>
+                    <a href="#contact" class="btn-primary" data-cursor="hover">View Available</a>
+                </div>
+                <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 500px); gap: 80px;">
+                    <div class="reveal-img-container port-img port-tall" style="grid-column: 1 / 2; grid-row: 1 / 3;">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio 1">
+                    </div>
+                    <div class="reveal-img-container port-img">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio 2">
+                    </div>
+                    <div class="reveal-img-container port-img">
+                        <img src="https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio 3">
+                    </div>
+                    <div class="reveal-img-container port-img port-wide" style="grid-column: 2 / 4; grid-row: 2 / 3;">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Portfolio 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Scroll Projects Section -->
+        <section id="projects" class="horizontal-section">
+            <div class="horizontal-container">
+                <div class="horizontal-title-wrap">
+                    <h2 class="section-title" style="margin-right: 160px; white-space: nowrap;">Investment<br>Corridors.</h2>
+                </div>
+                <div class="horizontal-item" data-cursor="hover">
+                    <div class="reveal-img-container">
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sangareddy">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-num">( 01 )</span>
+                        <h3 class="project-name">Sangareddy</h3>
+                    </div>
+                </div>
+                <div class="horizontal-item" data-cursor="hover">
+                    <div class="reveal-img-container">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sadashivpet">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-num">( 02 )</span>
+                        <h3 class="project-name">Sadashivpet</h3>
+                    </div>
+                </div>
+                <div class="horizontal-item" data-cursor="hover">
+                    <div class="reveal-img-container">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yadadri">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-num">( 03 )</span>
+                        <h3 class="project-name">Yadadri</h3>
+                    </div>
+                </div>
+                <div class="horizontal-item" data-cursor="hover">
+                    <div class="reveal-img-container">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shadnagar">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-num">( 04 )</span>
+                        <h3 class="project-name">Shadnagar</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-grid">
+                <address class="contact-info">
+                    <h2 class="section-title">Begin The<br>Dialogue.</h2>
+                    <div class="info-details fade-up">
+                        <p><strong>Headquarters</strong><br>Road No.1, Vasavi Srinivasam, MIG-37, beside Swiss Castle Bakery street, KPHB Phase-1, Kukatpally, Hyderabad 500072</p>
+                        <p><strong>Direct Line</strong><br>+91 63026 59769</p>
+                        <p><strong>Hours of Operation</strong><br>Mon–Sat: 10:00 AM – 7:00 PM</p>
+                        <div class="partners-info">
+                            <p><strong>Leadership</strong><br>Valluri Shivaiah, Laxmi Valluri, Venkatalaxminarayana Valluri</p>
+                        </div>
+                    </div>
+                </address>
+                <div class="contact-form fade-up">
+                    <form id="booking-form">
+                        <div class="input-group">
+                            <label for="name" class="visually-hidden">Name</label>
+                            <input type="text" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="visually-hidden">Email Address</label>
+                            <input type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone" class="visually-hidden">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="interest" class="visually-hidden">Area of Interest</label>
+                            <select id="interest" required>
+                                <option value="" disabled selected>Select Interest</option>
+                                <option value="plots">Open Plots</option>
+                                <option value="villas">Villas / Residential</option>
+                                <option value="nri">NRI Advisory</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary submit-btn" data-cursor="hover">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand section-title" style="margin-bottom: 0;">Srivasuda.</div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Srivasuda True Wealth India LLP. (LLPIN: AAQ-3553)</p>
+                <nav class="footer-links" aria-label="Footer Navigation">
+                    <a href="#" data-cursor="hover">Privacy Policy</a>
+                    <a href="#" data-cursor="hover">Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
