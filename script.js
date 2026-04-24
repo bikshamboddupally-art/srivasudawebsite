@@ -175,6 +175,31 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
+        // Amenities Background Reveal and Parallax
+        const amenitiesBg = document.querySelector('.amenities-bg');
+        if(amenitiesBg) {
+            gsap.to(amenitiesBg, {
+                clipPath: "inset(0% 0 0 0)",
+                ease: "power3.inOut",
+                scrollTrigger: {
+                    trigger: ".amenities-section",
+                    start: "top 80%",
+                    end: "bottom top",
+                    scrub: 1
+                }
+            });
+            gsap.to(".amenities-bg img", {
+                yPercent: 20,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: ".amenities-section",
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+        }
+
         // Full width parallax image (newly added section)
         const fullImg = document.querySelector('.full-img img');
         if(fullImg) {
