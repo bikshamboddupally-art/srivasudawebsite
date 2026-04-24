@@ -683,6 +683,29 @@ address.contact-info {
 }
 
 /* Responsive */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 120px;
+}
+.section-header.align-baseline {
+    align-items: baseline;
+}
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    padding-top: 64px;
+    border-top: 1px solid var(--border-color);
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    gap: 80px;
+}
+
 @media (max-width: 1024px) {
     .about-grid, .contact-grid {
         grid-template-columns: 1fr;
@@ -695,26 +718,86 @@ address.contact-info {
         width: 500px;
         height: 640px;
     }
-    .about-section, .services-section, .contact-section {
-        padding: 160px 0;
+    .about-section, .services-section, .contact-section, .amenities-section, .gallery-grid-section {
+        padding: 160px 0 !important;
+    }
+    .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .port-wide {
+        grid-column: 1 / -1 !important;
+        grid-row: auto !important;
+    }
+    .port-tall {
+        grid-column: auto !important;
+        grid-row: auto !important;
     }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    .section-title {
+        font-size: 3.5rem;
+        margin-bottom: 24px;
+    }
+    .hero-title {
+        font-size: clamp(4rem, 15vw, 6rem);
+    }
     .nav-links {
         display: none;
     }
     .stats-grid {
         grid-template-columns: 1fr 1fr;
     }
-    .cards-grid {
+    .cards-grid, .amenities-grid, .portfolio-grid {
         grid-template-columns: 1fr;
+    }
+    .glass-card {
+        padding: 40px 24px;
+    }
+    .about-images {
+        height: 500px;
+    }
+    .about-section, .services-section, .contact-section, .amenities-section, .gallery-grid-section {
+        padding: 100px 0 !important;
+    }
+    .horizontal-container {
+        padding: 0 20px;
+    }
+    .horizontal-item {
+        width: 85vw;
+        height: 60vh;
+        margin-right: 40px;
+    }
+    .project-name {
+        font-size: 2.5rem;
+    }
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 24px;
+        margin-bottom: 64px;
     }
     .footer-bottom {
         flex-direction: column;
         gap: 32px;
     }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
     .footer-links a {
-        margin: 0 16px;
+        margin: 0;
+    }
+    .full-image-section {
+        height: 80vh !important;
     }
 }
